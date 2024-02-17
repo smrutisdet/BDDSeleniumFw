@@ -1,5 +1,6 @@
 package pageObjectClasses;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -17,10 +18,14 @@ public class UserHomePage {
         PageFactory.initElements(driver,this);
     }
     public void verifyUserHomepagePageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             System.out.println("User Home page is displayed");
-        else
+            Assert.assertTrue(true);
+        }
+        else {
             System.out.println("User Home page is not displayed");
+            Assert.assertTrue(false);
+        }
     }
     public void clickLogoutLink(){
         logoutLink.click();
