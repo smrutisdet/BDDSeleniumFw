@@ -20,11 +20,11 @@ public class HomePage {
         signUpOrLogInLink.click();
         System.out.println("Clicked on SignUp Or Login Link");
     }
-    public void verifySignUpOrLoginPageTitle(){
+    /*public void verifySignUpOrLoginPageTitle(){
         if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
             System.out.println("SignUp Or Login page is displayed");
         else
             System.out.println("SignUp Or Login page is not displayed");
-    }
+    }*/
 
 }

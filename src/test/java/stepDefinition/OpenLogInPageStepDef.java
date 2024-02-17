@@ -1,21 +1,26 @@
 package stepDefinition;
+import automationUtilities.BaseSteps;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageObjectClasses.HomePage;
+import pageObjectClasses.SignUpLoginPage;
+import pageObjectClasses.UserHomePage;
 
-public class OpenLogInPageStepDef {
-    public static WebDriver driver;
+public class OpenLogInPageStepDef extends BaseSteps{
+    //public static WebDriver driver;
     private HomePage homePage;
-    String expectedLoginPageTitle="Automation Exercise - Signup / Login";
+    private SignUpLoginPage signupLoginPage;
+    private UserHomePage userHomepage;
+    private BaseSteps baseSteps;
     @Given("user navigates to the application")
     public void user_navigates_to_the_application() {
-        driver= new ChromeDriver();
-        driver.get("https://automationexercise.com/");
-        driver.manage().window().maximize();
-        System.out.println("Navigated to application");
+        baseSteps=new BaseSteps();
+        baseSteps.openURL();
         homePage=new HomePage(driver);
+        signupLoginPage=new SignUpLoginPage(driver);
+        userHomepage=new UserHomePage(driver);
 
     }
     @When("user clicks on signup or login link")
@@ -24,11 +29,32 @@ public class OpenLogInPageStepDef {
     }
     @Then("signup or login page should be displayed")
     public void signup_or_login_page_should_be_displayed() {
-        homePage.verifySignUpOrLoginPageTitle();
+        signupLoginPage.verifySignUpOrLoginPageTitle();
     }
 
     @And("user closes the browser")
     public void userClosesTheBrowser() {
-        driver.quit();
+        baseSteps.closeBrowser();
+    }
+
+    @And("user enters username as {string} and password as {string}")
+    public void userEntersUsernameAsAndPasswordAs(String userName, String password) {
+        signupLoginPage.enterUserName(userName);
+        signupLoginPage.enterPassword(password);
+    }
+
+    @And("user clicks on login button")
+    public void userClicksOnLoginButton() {
+        signupLoginPage.clickLoginButton();
+    }
+
+    @Then("application should navigate to logged in user home page")
+    public void applicationShouldNavigateToLoggedInUserHomePage() {
+        userHomepage.verifyUserHomepagePageTitle();
+    }
+
+    @And("user clicks on logout link")
+    public void userClicksOnLogoutLink() {
+        userHomepage.clickLogoutLink();
     }
 }
