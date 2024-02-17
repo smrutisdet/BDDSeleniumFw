@@ -14,6 +14,7 @@ Feature:User Login
     When user clicks on signup or login link
     Then signup or login page should be displayed
     And user enters username  and password
+    |username|password|
     |QAAutomationClasses@gmail.com|QAAutomationClasses|
     |QAAutomationClasses1@gmail.com|QAAutomationClasses1|
     |QAAutomationClasses2@gmail.com|QAAutomationClasses2|
