@@ -1,5 +1,6 @@
 package stepDefinition;
 import automationUtilities.BaseSteps;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pageObjectClasses.HomePage;
 import pageObjectClasses.SignUpLoginPage;
 import pageObjectClasses.UserHomePage;
+
+import java.util.List;
 
 public class OpenLogInPageStepDef extends BaseSteps{
     //public static WebDriver driver;
@@ -56,5 +59,15 @@ public class OpenLogInPageStepDef extends BaseSteps{
     @And("user clicks on logout link")
     public void userClicksOnLogoutLink() {
         userHomepage.clickLogoutLink();
+    }
+
+    @And("user enters username  and password")
+    public void userEntersUsernameAndPassword(DataTable userCredential) {
+        List<List<String>>credentialList=userCredential.asLists(String.class);
+        for(List<String> value:credentialList){
+            System.out.println(value.get(0)+"===================="+value.get(1));
+        }
+        signupLoginPage.enterUserName(credentialList.get(0).get(0));
+        signupLoginPage.enterPassword(credentialList.get(0).get(1));
     }
 }
