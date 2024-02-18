@@ -68,13 +68,6 @@ public class OpenLogInPageStepDef extends BaseSteps {
 
     @And("user enters username  and password")
     public void userEntersUsernameAndPassword(DataTable userCredential) {
-       /* Data Table as Lists implementation
-        List<List<String>>credentialList=userCredential.asLists(String.class);
-        for(List<String> value:credentialList){
-            System.out.println(value.get(0)+"===================="+value.get(1));
-        }
-        signupLoginPage.enterUserName(credentialList.get(0).get(0));
-        signupLoginPage.enterPassword(credentialList.get(0).get(1));*/
         // DataTable as Map implementation
         List<Map<String, String>> credentialMap = userCredential.asMaps(String.class, String.class);
         for (Map<String, String> value : credentialMap) {
@@ -82,5 +75,16 @@ public class OpenLogInPageStepDef extends BaseSteps {
         }
         signupLoginPage.enterUserName(credentialMap.get(0).get("username"));
         signupLoginPage.enterPassword(credentialMap.get(0).get("password"));
+    }
+
+    @And("user enters username  and password as below")
+    public void userEntersUsernameAndPasswordAsBelow(DataTable userCredential) {
+         // Data Table as Lists implementation
+        List<List<String>>credentialList=userCredential.asLists(String.class);
+        for(List<String> value:credentialList){
+            System.out.println(value.get(0)+"===================="+value.get(1));
+        }
+        signupLoginPage.enterUserName(credentialList.get(0).get(0));
+        signupLoginPage.enterPassword(credentialList.get(0).get(1));
     }
 }
