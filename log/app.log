@@ -1,0 +1,35 @@
+13:59:02.217 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+13:59:12.538 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+13:59:12.539 [main]INFO  stepDefinition.OpenLogInPageStepDef - User navigated to application
+13:59:12.631 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+13:59:14.253 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+13:59:14.257 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+13:59:14.277 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+13:59:14.284 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is entering user Name and password
+13:59:14.662 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :QAAutomationClasses@gmail.com 
+13:59:14.908 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :QAAutomationClasses
+13:59:14.910 [main]INFO  stepDefinition.OpenLogInPageStepDef - user is clicking on Login button
+13:59:18.350 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+13:59:18.352 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is verifying application is navigated to user Home Page
+13:59:18.371 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+13:59:18.381 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is trying to click on logout link
+13:59:20.546 [main]INFO  pageObjectClasses.UserHomePage - Clicked on logout link
+13:59:20.547 [main]INFO  stepDefinition.OpenLogInPageStepDef - Trying to quit  browser
+13:59:20.892 [main]INFO  automationUtilities.BaseSteps - driver is closed
+14:03:45.659 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+14:03:53.768 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+14:03:53.840 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+14:03:56.020 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+14:03:56.021 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+14:03:56.035 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+14:03:56.037 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is entering user Name and password
+14:03:56.263 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :QAAutomationClasses@gmail.com 
+14:03:56.421 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :QAAutomationClasses
+14:03:56.422 [main]INFO  stepDefinition.OpenLogInPageStepDef - user is clicking on Login button
+14:03:59.956 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+14:03:59.959 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is verifying application is navigated to user Home Page
+14:03:59.985 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+14:03:59.992 [main]INFO  stepDefinition.OpenLogInPageStepDef - User is trying to click on logout link
+14:04:02.497 [main]INFO  pageObjectClasses.UserHomePage - Clicked on logout link
+14:04:02.499 [main]INFO  stepDefinition.OpenLogInPageStepDef - Trying to quit  browser
+14:04:02.865 [main]INFO  automationUtilities.BaseSteps - driver is closed

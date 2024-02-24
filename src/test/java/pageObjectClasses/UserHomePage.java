@@ -6,9 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class UserHomePage {
     private WebDriver driver;
+    private Logger log;
     private String ExpectedPageTitle="Automation Exercise";
     @FindBy(xpath = "//a[@href='/logout']")
     @CacheLookup
@@ -16,10 +19,11 @@ public class UserHomePage {
     public UserHomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
+        log=LogManager.getLogger(this.getClass().getName());
     }
     public void verifyUserHomepagePageTitle(){
         if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
-            System.out.println("User Home page is displayed");
+            log.info("User Home page is displayed");
             Assert.assertTrue(true);
         }
         else {
@@ -29,7 +33,7 @@ public class UserHomePage {
     }
     public void clickLogoutLink(){
         logoutLink.click();
-        System.out.println("Clicked on logout link");
+        log.info("Clicked on logout link");
     }
 
 }

@@ -1,9 +1,10 @@
 package automationUtilities;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -13,9 +14,13 @@ public class BaseSteps {
     private Properties prop;
     private String applicationURL;
     private String browser;
+    private Logger log;
+
+
     public void openURL(){
         prop=new Properties();
         try {
+            log=LogManager.getLogger(this.getClass().getName());
             prop.load(BaseSteps.class.getClassLoader().getResourceAsStream("configuration.properties"));
             applicationURL=prop.getProperty("appURL");
             browser=prop.getProperty("browser");
@@ -30,17 +35,17 @@ public class BaseSteps {
             }
             else{
                 driver=null;
-                System.out.println("Invalid browser type");
+                log.info("Invalid browser type");
             }
             driver.get(applicationURL);
             driver.manage().window().maximize();
-            System.out.println("Navigated to application");
+            log.info("Navigated to application");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
     public void closeBrowser(){
         driver.quit();
-        System.out.println("driver is closed");
+        log.info("driver is closed");
     }
 }

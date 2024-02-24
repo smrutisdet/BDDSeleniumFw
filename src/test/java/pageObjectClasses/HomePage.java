@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class HomePage {
-    public WebDriver driver;
+    private WebDriver driver;
+    private Logger log;
     private String ExpectedPageTitle="Automation Exercise - Signup / Login";
     @FindBy(xpath = "//a[@href='/login']")
     @CacheLookup
@@ -15,10 +18,11 @@ public class HomePage {
     public HomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
+        log=LogManager.getLogger(this.getClass().getName());
     }
     public void clickSignUpOrLoginLink(){
         signUpOrLogInLink.click();
-        System.out.println("Clicked on SignUp Or Login Link");
+        log.info("Clicked on SignUp Or Login Link");
     }
     /*public void verifySignUpOrLoginPageTitle(){
         if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
