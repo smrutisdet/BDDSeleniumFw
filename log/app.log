@@ -33,3 +33,52 @@
 14:04:02.497 [main]INFO  pageObjectClasses.UserHomePage - Clicked on logout link
 14:04:02.499 [main]INFO  stepDefinition.OpenLogInPageStepDef - Trying to quit  browser
 14:04:02.865 [main]INFO  automationUtilities.BaseSteps - driver is closed
+12:03:19.989 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:08:15.798 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:18:02.335 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:19:28.548 [main]INFO  automationUtilities.BrowserFactory - Browser isnull
+12:19:28.568 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:22:37.391 [main]INFO  automationUtilities.BrowserFactory - Browser ischrome
+12:22:43.378 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:32:54.084 [main]INFO  automationUtilities.BrowserFactory - Browser ischrome
+12:32:56.584 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:33:02.558 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+12:33:02.600 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+12:33:04.550 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+12:33:04.551 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+12:33:04.563 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+12:35:32.749 [main]INFO  automationUtilities.BrowserFactory - Browser ischrome
+12:35:35.720 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:35:40.124 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+12:35:40.185 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+12:35:41.647 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+12:35:41.648 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+12:35:41.666 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+12:38:02.551 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+12:38:05.621 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+12:38:08.899 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+12:38:08.939 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+12:38:10.181 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+12:38:10.183 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+12:38:10.232 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+13:14:26.116 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+13:14:30.611 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+13:14:34.933 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+13:14:35.019 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+13:14:37.129 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+13:14:37.131 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+13:14:37.158 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is not displayed
+13:17:06.336 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+13:17:09.957 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+13:17:13.754 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+13:17:13.836 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+13:17:16.211 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+13:17:16.213 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+13:17:16.236 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is not displayed
+13:19:17.281 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+13:19:22.650 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+13:19:27.955 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+13:19:28.077 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+13:19:29.717 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+13:19:29.719 [main]INFO  stepDefinition.OpenLogInPageStepDef - Verifying SignUp/Login Page is displayed
+13:19:29.735 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed

@@ -21,8 +21,8 @@ public class BrowserFactory {
             log=LogManager.getLogger(this.getClass().getName());
             prop=new Properties();
             prop.load(BrowserFactory.class.getClassLoader().getResourceAsStream("configuration.properties"));
-            browserName=System.getProperty("browser");
-            log.info("Browser is"+browserName);
+            browserName=prop.getProperty("browser");
+            log.info("Browser is "+browserName);
             if(browserName.equalsIgnoreCase("chrome")){
                 driver.set(ThreadGuard.protect(new ChromeDriver()));
             }

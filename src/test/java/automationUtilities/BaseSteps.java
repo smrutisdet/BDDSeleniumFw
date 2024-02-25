@@ -10,20 +10,20 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseSteps {
-    public static WebDriver driver;
+    //public static WebDriver driver;
     private Properties prop;
     private String applicationURL;
     private String browser;
     private Logger log;
 
 
-    public void openURL(){
-        prop=new Properties();
+    public void openURL(WebDriver driver) {
+        prop = new Properties();
         try {
-            log=LogManager.getLogger(this.getClass().getName());
+            log = LogManager.getLogger(this.getClass().getName());
             prop.load(BaseSteps.class.getClassLoader().getResourceAsStream("configuration.properties"));
-            applicationURL=prop.getProperty("appURL");
-            browser=prop.getProperty("browser");
+            applicationURL = prop.getProperty("appURL");
+            /*browser=prop.getProperty("browser");
             if(browser.equalsIgnoreCase("chrome")){
                 driver=new ChromeDriver();
             }
@@ -36,16 +36,12 @@ public class BaseSteps {
             else{
                 driver=null;
                 log.info("Invalid browser type");
-            }
+            }*/
             driver.get(applicationURL);
             driver.manage().window().maximize();
             log.info("Navigated to application");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-    public void closeBrowser(){
-        driver.quit();
-        log.info("driver is closed");
     }
 }

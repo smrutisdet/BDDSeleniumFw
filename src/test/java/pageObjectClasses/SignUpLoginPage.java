@@ -1,5 +1,6 @@
 package pageObjectClasses;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -39,10 +40,15 @@ public class SignUpLoginPage {
         log.info("Clicked on login button");
     }
     public void verifySignUpOrLoginPageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("SignUp Or Login page is displayed");
-        else
+            Assert.assertTrue(true);
+        }
+        else{
             log.info("SignUp Or Login page is not displayed");
+            Assert.assertTrue(false);
+        }
+
     }
 
 }

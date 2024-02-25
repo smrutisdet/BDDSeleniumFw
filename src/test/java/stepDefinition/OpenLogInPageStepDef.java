@@ -1,6 +1,7 @@
 package stepDefinition;
 
 import automationUtilities.BaseSteps;
+import automationUtilities.BrowserFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
@@ -22,13 +23,14 @@ public class OpenLogInPageStepDef extends BaseSteps {
     private UserHomePage userHomepage;
     private BaseSteps baseSteps;
     private Logger log;
+    private WebDriver driver= BrowserFactory.getDriverInstance();
 
     @Given("user navigates to the application")
     public void user_navigates_to_the_application() {
         log=LogManager.getLogger(this.getClass().getName());
         baseSteps = new BaseSteps();
         log.info("User trying to  navigate to application");
-        baseSteps.openURL();
+        baseSteps.openURL(driver);
         homePage = new HomePage(driver);
         signupLoginPage = new SignUpLoginPage(driver);
         userHomepage = new UserHomePage(driver);
@@ -48,13 +50,6 @@ public class OpenLogInPageStepDef extends BaseSteps {
         log.info("Verifying SignUp/Login Page is displayed");
         signupLoginPage.verifySignUpOrLoginPageTitle();
     }
-
-    @And("user closes the browser")
-    public void userClosesTheBrowser() {
-        log.info("Trying to quit  browser");
-        baseSteps.closeBrowser();
-    }
-
     @And("user enters username as {string} and password as {string}")
     public void userEntersUsernameAsAndPasswordAs(String userName, String password) {
         log.info("User is entering user Name and password");
