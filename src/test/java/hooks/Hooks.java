@@ -25,7 +25,8 @@ public class Hooks {
     public void takeScreenshot(Scenario scenario){
         String screenShotName=scenario.getName().toUpperCase().replaceAll(" ","_");
     byte[] srcLocation=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-    scenario.attach(srcLocation,"image/png",screenShotName);
-
+    if(scenario.isFailed()) {
+        scenario.attach(srcLocation, "image/png", screenShotName);
+    }
 }
 }

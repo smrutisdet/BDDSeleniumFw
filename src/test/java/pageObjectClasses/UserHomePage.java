@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 public class UserHomePage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
     private String ExpectedPageTitle="Automation Exercise";
     @FindBy(xpath = "//a[@href='/logout']")
     @CacheLookup
@@ -21,15 +22,16 @@ public class UserHomePage {
         PageFactory.initElements(driver,this);
         log=LogManager.getLogger(this.getClass().getName());
     }
-    public void verifyUserHomepagePageTitle(){
+    public boolean verifyUserHomepagePageTitle(){
         if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("User Home page is displayed");
-            Assert.assertTrue(true);
+            flag=true;
         }
         else {
             System.out.println("User Home page is not displayed");
-            Assert.assertTrue(false);
+            flag=false;
         }
+        return flag;
     }
     public void clickLogoutLink(){
         logoutLink.click();

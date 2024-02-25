@@ -12,6 +12,7 @@ import org.apache.logging.log4j.LogManager;
 public class SignUpLoginPage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
     private String ExpectedPageTitle="Automation Exercise - Signup / Login";
     @FindBy(xpath = "//input[@data-qa='login-email']")
     @CacheLookup
@@ -39,16 +40,17 @@ public class SignUpLoginPage {
         loginButton.click();
         log.info("Clicked on login button");
     }
-    public void verifySignUpOrLoginPageTitle(){
+    public Boolean verifySignUpOrLoginPageTitle(){
         if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("SignUp Or Login page is displayed");
-            Assert.assertTrue(true);
+            flag=true;
         }
         else{
             log.info("SignUp Or Login page is not displayed");
-            Assert.assertTrue(false);
+            flag=true;
         }
 
+        return flag;
     }
 
 }

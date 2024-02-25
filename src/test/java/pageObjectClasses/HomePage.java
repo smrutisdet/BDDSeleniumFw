@@ -11,7 +11,6 @@ import org.apache.logging.log4j.LogManager;
 public class HomePage {
     private WebDriver driver;
     private Logger log;
-    private String ExpectedPageTitle="Automation Exercise - Signup / Login";
     @FindBy(xpath = "//a[@href='/login']")
     @CacheLookup
     private WebElement signUpOrLogInLink;
