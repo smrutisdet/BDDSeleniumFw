@@ -74,22 +74,20 @@ public class PlaceOrderStepDef extends BaseSteps {
 
     @And("verifies the item added in the cart")
     public void verifiesTheItemAddedInTheCart() {
+        log.info("Verify if added item is in cart");
         viewCartPage.verifyCartItem();
     }
 
     @Then("user clicks on proceeds To Checkout")
     public void userClicksOnProceedsToCheckout() {
-        checkoutPage=new CheckoutPage(driver);
-        checkoutPage.verifyCheckoutPageTitle();
-
-
+        log.info("user clicks on Proceed To Checkout button");
+        viewCartPage.clicksOnProceedToCheckoutLink();
     }
-
     @And("user clicks on place order")
     public void userClicksOnPlaceOrder() {
-        checkoutPage.clicksOnPlaceOrderButton();
+        checkoutPage=new CheckoutPage(driver);
+        checkoutPage.clickOnPlaceOrderButton();
     }
-
     @And("user enter payment details and clicks on Pay and Confirm Order")
     public void userEnterPaymentDetailsAndClicksOnPayAndConfirmOrder() {
         paymentPage=new PaymentPage(driver);
@@ -97,11 +95,9 @@ public class PlaceOrderStepDef extends BaseSteps {
         paymentPage.enterPaymentDetails();
         paymentPage.clickOnPayAndConfirmOrder();
     }
-
     @And("user navigates to order Confirmation page")
     public void userNavigatesToOrderConfirmationPage() {
         orderConfirmationPage=new OrderConfirmationPage(driver);
         orderConfirmationPage.verifyOrderConfirmationPageTitle();
-
     }
 }

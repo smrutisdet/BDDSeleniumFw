@@ -14,9 +14,9 @@ import java.time.Duration;
 public class CheckoutPage {
     private WebDriver driver;
     private Logger log;
-    @FindBy(xpath="//section[@id='cart_items']/div/div[7]/a[contains(text(),'Place Order')]")
+    @FindBy(xpath="//a[contains(text(),'Place Order')]")
     @CacheLookup
-    private WebElement placeOrder;
+    private WebElement placeOrderButton;
     private String ExpectedPageTitle="Automation Exercise - Checkout";
     public CheckoutPage(WebDriver driver){
         this.driver=driver;
@@ -29,12 +29,8 @@ public class CheckoutPage {
         else
             log.info("Check Out  page is not displayed");
     }
-    public void clicksOnPlaceOrderButton(){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        //get the height of the webpage and scroll to the end
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        placeOrder.click();
+    public void clickOnPlaceOrderButton(){
+        placeOrderButton.click();
         log.info("Clicked on Place Order button");
     }
 }
