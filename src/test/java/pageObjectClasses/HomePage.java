@@ -14,6 +14,9 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/login']")
     @CacheLookup
     private WebElement signUpOrLogInLink;
+    @FindBy(xpath = "//a[@href='/products']")
+    @CacheLookup
+    private WebElement productsLink;
     public HomePage(WebDriver driver){
         this.driver=driver;
         PageFactory.initElements(driver,this);
@@ -29,5 +32,10 @@ public class HomePage {
         else
             System.out.println("SignUp Or Login page is not displayed");
     }*/
+    //new Methods added
 
+    public void clicksProductsLink(){
+        productsLink.click();
+        log.info("Use Clicked on Products  Link successfully");
+    }
 }

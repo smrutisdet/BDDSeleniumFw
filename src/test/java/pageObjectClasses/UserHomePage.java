@@ -28,7 +28,7 @@ public class UserHomePage {
             flag=true;
         }
         else {
-            System.out.println("User Home page is not displayed");
+            log.info("User Home page is not displayed");
             flag=false;
         }
         return flag;
