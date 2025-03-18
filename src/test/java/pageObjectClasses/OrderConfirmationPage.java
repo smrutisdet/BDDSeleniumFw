@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class OrderConfirmationPage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
 
     private String ExpectedPageTitle="Automation Exercise - Order Placed";
     public OrderConfirmationPage(WebDriver driver){
@@ -18,10 +19,16 @@ public class OrderConfirmationPage {
         PageFactory.initElements(driver,this);
         log=LogManager.getLogger(this.getClass().getName());
     }
-    public void verifyOrderConfirmationPageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+    public Boolean verifyOrderConfirmationPageTitle(){
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("Order confirmation page is displayed");
-        else
+            flag = true;
+        }
+        else {
             log.info("order confirmation  page is not displayed");
+            flag = false;
+        }
+        return flag;
     }
+
 }

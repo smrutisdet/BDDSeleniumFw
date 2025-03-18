@@ -71,13 +71,11 @@ public class PlaceOrderStepDef extends BaseSteps {
         log.info("user verifies the application is in View Cart page");
         viewCartPage.verifyViewCartPageTitle();
     }
-
-    @And("verifies the item added in the cart")
-    public void verifiesTheItemAddedInTheCart() {
+    @Then("user verifies the {string} added in the cart")
+    public void userVerifiesTheAddedInTheCart(String searchedItem) {
         log.info("Verify if added item is in cart");
-        viewCartPage.verifyCartItem();
+        Assert.assertTrue(viewCartPage.verifyCartItem(searchedItem));
     }
-
     @Then("user clicks on proceeds To Checkout")
     public void userClicksOnProceedsToCheckout() {
         log.info("user clicks on Proceed To Checkout button");
@@ -98,6 +96,6 @@ public class PlaceOrderStepDef extends BaseSteps {
     @And("user navigates to order Confirmation page")
     public void userNavigatesToOrderConfirmationPage() {
         orderConfirmationPage=new OrderConfirmationPage(driver);
-        orderConfirmationPage.verifyOrderConfirmationPageTitle();
+        Assert.assertTrue(orderConfirmationPage.verifyOrderConfirmationPageTitle());
     }
 }

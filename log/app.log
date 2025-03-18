@@ -1763,3 +1763,306 @@
 14:16:33.996 [pool-3-thread-3]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
 14:16:33.996 [pool-3-thread-3]INFO  stepDefinition.UserHomePageStepDef - User is trying to click on logout link
 14:16:36.830 [pool-3-thread-3]INFO  pageObjectClasses.UserHomePage - Clicked on logout link
+16:00:08.422 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+16:00:15.944 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+16:00:29.105 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+16:00:29.221 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+16:00:33.579 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+16:00:33.588 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+16:00:33.640 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+16:00:35.362 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+16:00:39.583 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+16:00:43.412 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+16:00:43.417 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+16:00:44.962 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+16:00:44.965 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+16:00:44.988 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+16:00:44.994 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+16:00:45.546 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+16:00:45.729 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+16:00:45.734 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+16:00:47.867 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+16:00:47.871 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+16:00:47.901 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+16:00:49.876 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+16:00:49.876 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+16:00:50.175 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+16:00:50.177 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+16:00:51.714 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+16:00:51.714 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+16:00:53.226 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+16:00:53.227 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+16:00:53.265 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+16:00:53.266 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+16:00:53.534 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+16:00:53.535 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+16:00:54.014 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+16:00:54.014 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+16:00:54.018 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+16:00:55.482 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+16:00:55.500 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+16:00:55.521 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+16:00:55.524 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+16:00:55.703 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+16:00:55.705 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+16:00:57.150 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+16:00:58.700 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+16:00:58.735 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+16:00:59.747 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+16:01:02.542 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+16:01:02.569 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed
+16:01:03.704 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+16:01:07.124 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+16:01:21.922 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+16:01:21.926 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+16:01:24.022 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+16:01:24.026 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+16:01:24.047 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+16:01:24.049 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+16:01:24.358 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+16:01:24.522 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+16:01:24.524 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+16:01:24.685 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+16:01:24.688 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+16:01:36.071 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+16:01:36.073 [main]INFO  stepDefinition.UserHomePageStepDef - User is trying to click on logout link
+16:01:38.814 [main]INFO  pageObjectClasses.UserHomePage - Clicked on logout link
+16:03:14.682 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+16:03:19.317 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+16:03:25.333 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+16:03:25.392 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+16:03:27.578 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+16:03:27.579 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+16:03:27.602 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+16:03:27.614 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+16:03:27.867 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+16:03:28.036 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+16:03:28.039 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+16:03:28.209 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+16:03:28.217 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+16:03:30.238 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+16:03:31.679 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+16:03:31.679 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+16:03:31.873 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+16:03:31.873 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+16:03:33.203 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+16:03:33.204 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+16:03:34.631 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+16:03:34.631 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+16:03:34.657 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+16:03:34.658 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+16:03:34.854 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+16:03:34.855 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+16:03:35.413 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+16:03:35.413 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+16:03:35.416 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+16:03:36.893 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+16:03:36.896 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+16:03:36.916 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+16:03:36.917 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+16:03:36.989 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+16:03:36.989 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+16:03:38.399 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+16:03:40.455 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+16:03:40.483 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+16:03:41.488 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+16:03:44.365 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+16:03:44.391 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed
+16:03:45.629 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+16:03:49.285 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+16:05:29.913 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+16:05:29.915 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+16:05:32.304 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+16:05:32.305 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+16:05:32.331 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+16:05:32.334 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+16:05:32.712 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+16:05:32.887 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+16:05:32.889 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+16:05:33.069 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+16:05:33.070 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+16:06:27.564 [main]INFO  pageObjectClasses.UserHomePage - User Home page is not displayed
+19:34:52.928 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+19:35:00.601 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+19:35:04.711 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+19:35:04.751 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+19:35:06.463 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+19:35:06.465 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+19:35:06.502 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+19:35:06.521 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+19:35:07.167 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+19:35:07.400 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+19:35:07.413 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+19:35:10.221 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+19:35:10.228 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+19:35:10.245 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+19:35:12.643 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+19:35:12.643 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+19:35:12.958 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+19:35:12.960 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+19:35:14.338 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+19:35:14.341 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+19:35:15.959 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+19:35:15.959 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+19:35:16.001 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+19:35:16.003 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+19:35:16.322 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+19:35:16.322 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+19:35:16.839 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+19:35:16.839 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+19:35:16.839 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+19:35:18.465 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+19:35:18.465 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+19:35:18.489 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+19:35:18.496 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+19:35:18.565 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+19:35:18.568 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+19:35:19.978 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+19:35:21.464 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+19:35:21.493 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+19:35:22.488 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+19:35:22.698 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+19:35:25.186 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed
+19:35:29.207 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+19:35:33.098 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+19:35:36.968 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+19:35:36.969 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+19:35:38.570 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+19:35:38.570 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+19:35:38.586 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+19:35:38.586 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+19:35:39.140 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+19:35:39.328 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+19:35:39.328 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+19:35:41.575 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+19:35:41.575 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+19:35:41.598 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+19:35:43.225 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+19:35:43.227 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+19:35:43.518 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :winter top
+19:35:43.518 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+19:35:44.850 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+19:35:44.850 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+19:37:36.317 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+19:37:41.093 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+19:37:45.208 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+19:37:45.324 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+19:37:46.907 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+19:37:46.910 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+19:37:46.937 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+19:37:46.952 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+19:37:47.483 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+19:37:47.719 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+19:37:47.722 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+19:37:50.423 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+19:37:50.425 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+19:37:50.446 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+19:37:52.247 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+19:37:52.249 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+19:37:52.512 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+19:37:52.513 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+19:37:53.977 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+19:37:53.977 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+19:37:55.454 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+19:37:55.454 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+19:37:55.475 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+19:37:55.475 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+19:37:55.779 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+19:37:55.779 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+19:37:56.247 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+19:37:56.247 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+19:37:56.247 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+19:37:57.680 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+19:37:57.683 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+19:37:57.704 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+19:37:57.706 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+19:37:57.769 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+19:37:57.769 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+19:37:59.541 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+19:38:01.137 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+19:38:01.166 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+19:38:02.111 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+19:38:05.388 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+19:38:05.414 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed
+09:42:18.725 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+09:42:27.827 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+09:42:32.003 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+09:42:32.093 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+09:42:33.564 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+09:42:33.566 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+09:42:33.599 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+09:42:33.617 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+09:42:33.958 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+09:42:34.583 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+09:42:34.585 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+09:42:36.833 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+09:42:36.835 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+09:42:36.858 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+09:43:00.537 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+09:43:00.541 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+09:43:00.980 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+09:43:00.982 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+09:43:02.505 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+09:43:02.507 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+09:43:03.661 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+09:43:03.661 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+09:43:03.764 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+09:43:03.764 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+09:43:04.100 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+09:43:04.100 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+09:43:04.513 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+09:43:04.513 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+09:43:04.517 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+09:43:05.819 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+09:43:05.828 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+09:43:05.845 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+09:43:05.845 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+09:43:06.050 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+09:43:06.050 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+09:43:07.393 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+09:43:09.001 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+09:43:09.033 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+09:43:10.074 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+09:43:10.274 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+09:43:12.939 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed
+09:54:54.539 [main]INFO  automationUtilities.BrowserFactory - Browser is chrome
+09:55:00.154 [main]INFO  stepDefinition.OpenLogInPageStepDef - User trying to  navigate to application
+09:55:04.738 [main]INFO  automationUtilities.BaseSteps - Navigated to application
+09:55:04.778 [main]INFO  stepDefinition.OpenLogInPageStepDef - User  trying to click on log in link
+09:55:06.563 [main]INFO  pageObjectClasses.HomePage - Clicked on SignUp Or Login Link
+09:55:06.563 [main]INFO  stepDefinition.SignUpLogInPageStepDef - Verifying SignUp/Login Page is displayed
+09:55:06.599 [main]INFO  pageObjectClasses.SignUpLoginPage - SignUp Or Login page is displayed
+09:55:06.608 [main]INFO  stepDefinition.SignUpLogInPageStepDef - User is entering user Name and password
+09:55:06.938 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered User name as :testmiuser@gmail.com
+09:55:07.321 [main]INFO  pageObjectClasses.SignUpLoginPage - Entered password is  :Testmiuser@01
+09:55:07.323 [main]INFO  stepDefinition.SignUpLogInPageStepDef - user is clicking on Login button
+09:55:09.904 [main]INFO  pageObjectClasses.SignUpLoginPage - Clicked on login button
+09:55:09.907 [main]INFO  stepDefinition.UserHomePageStepDef - User is verifying application is navigated to user Home Page
+09:55:09.932 [main]INFO  pageObjectClasses.UserHomePage - User Home page is displayed
+09:55:13.757 [main]INFO  pageObjectClasses.HomePage - Use Clicked on Products  Link successfully
+09:55:13.760 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Products Link
+09:55:14.063 [main]INFO  pageObjectClasses.ProductsSearchPage - Entered search item is :Blue top
+09:55:14.063 [main]INFO  stepDefinition.PlaceOrderStepDef - User enters the search item
+09:55:15.797 [main]INFO  pageObjectClasses.ProductsSearchPage - User Clicked on Search button successfully
+09:55:15.797 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on search button
+09:55:17.326 [main]INFO  pageObjectClasses.ProductsSearchPage - Clicked on view Product button successfully
+09:55:17.326 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on view product button from search result
+09:55:17.348 [main]INFO  pageObjectClasses.ProductDetailsPage - Products Details page is displayed
+09:55:17.348 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify user is in Product Details Page
+09:55:17.612 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on add To Cart button successfully
+09:55:17.612 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Add To Cart Button
+09:55:18.091 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on continue shopping button successfully
+09:55:18.091 [main]INFO  stepDefinition.PlaceOrderStepDef - User clicks on Continue Shopping Button
+09:55:18.093 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on cart link
+09:55:19.571 [main]INFO  pageObjectClasses.ProductDetailsPage - Clicked on View Cart Link successfully
+09:55:19.577 [main]INFO  stepDefinition.PlaceOrderStepDef - user verifies the application is in View Cart page
+09:55:19.596 [main]INFO  pageObjectClasses.ViewCartPage - View Cart page is displayed
+09:55:19.596 [main]INFO  stepDefinition.PlaceOrderStepDef - Verify if added item is in cart
+09:55:19.661 [main]INFO  pageObjectClasses.ViewCartPage - Added item is present in cart
+09:55:19.661 [main]INFO  stepDefinition.PlaceOrderStepDef - user clicks on Proceed To Checkout button
+09:55:21.177 [main]INFO  pageObjectClasses.ViewCartPage - Clicked on proceed To Check Out link
+09:55:22.585 [main]INFO  pageObjectClasses.CheckoutPage - Clicked on Place Order button
+09:55:22.609 [main]INFO  pageObjectClasses.PaymentPage - Payment page is displayed
+09:55:23.620 [main]INFO  pageObjectClasses.PaymentPage - Payment Details are entered
+09:55:26.423 [main]INFO  pageObjectClasses.PaymentPage - Successfully clicked on Pay and Confirm Order
+09:55:26.448 [main]INFO  pageObjectClasses.OrderConfirmationPage - Order confirmation page is displayed

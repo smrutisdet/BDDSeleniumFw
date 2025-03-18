@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ViewCartPage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
     @FindBy(xpath = "//table[@id='cart_info_table']/tbody/tr[1]/td[2]/h4/a")
     @CacheLookup
     private WebElement CartItem;
@@ -29,11 +30,16 @@ public class ViewCartPage {
         else
             log.info("View Cart  page is not displayed");
     }
-    public void verifyCartItem(){
-        if(CartItem.getText().equalsIgnoreCase("Blue Top"))
+    public boolean verifyCartItem(String searchedItem){
+        if(CartItem.getText().equalsIgnoreCase(searchedItem)) {
             log.info("Added item is present in cart");
-        else
+            flag = true;
+        }
+        else {
             log.info("Added item is missing from cart");
+            flag = false;
+        }
+        return flag;
     }
     public void clicksOnProceedToCheckoutLink(){
         proceedToCheckOut.click();
