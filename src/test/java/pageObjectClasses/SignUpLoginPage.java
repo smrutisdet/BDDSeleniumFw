@@ -34,7 +34,7 @@ public class SignUpLoginPage {
     }
     public void enterPassword(String password){
         passwordTextBox.sendKeys(password);
-        log.info("Entered password is  :"+password);
+        log.info("Entered password is: *******");
     }
     public void clickLoginButton(){
         loginButton.click();

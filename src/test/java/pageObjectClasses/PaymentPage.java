@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class PaymentPage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
     @FindBy(xpath = "//input[@name='name_on_card']")
     @CacheLookup
     private WebElement nameOnCard;
@@ -35,11 +36,16 @@ public class PaymentPage {
         PageFactory.initElements(driver,this);
         log=LogManager.getLogger(this.getClass().getName());
     }
-    public void verifyPaymentPageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+    public boolean  verifyPaymentPageTitle(){
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("Payment page is displayed");
-        else
+            flag = true;
+        }
+        else {
             log.info("Payment page is not displayed");
+            flag=false;
+        }
+        return flag;
     }
     public void enterPaymentDetails(){
         nameOnCard.sendKeys("Smruti");

@@ -20,9 +20,10 @@ Feature:Add To Cart and place order
    And user clicks on place order
     And user enter payment details and clicks on Pay and Confirm Order
    Then user navigates to order Confirmation page
-
+    And user clicks on logout link
     Examples:
       | searchItem|
       | Blue top  |
+      | Men Tshirt|
 
 

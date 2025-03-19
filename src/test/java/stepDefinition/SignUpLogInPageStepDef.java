@@ -22,7 +22,7 @@ public class SignUpLogInPageStepDef extends BaseSteps {
     //public static WebDriver driver;
    // private HomePage homePage;
     private SignUpLoginPage signupLoginPage;
-    private UserHomePage userHomepage;
+  //  private UserHomePage userHomepage;
   //  private BaseSteps baseSteps;
     private Logger log;
     private WebDriver driver= BrowserFactory.getDriverInstance();

@@ -14,6 +14,7 @@ import java.time.Duration;
 public class ProductDetailsPage {
     private WebDriver driver;
     private Logger log;
+    private boolean flag;
     @FindBy(xpath = "//button[@class='btn btn-default cart']")
     @CacheLookup
     private WebElement addToCartButton;
@@ -31,16 +32,20 @@ public class ProductDetailsPage {
         PageFactory.initElements(driver,this);
         log=LogManager.getLogger(this.getClass().getName());
     }
-    public void verifyProductDetailsPageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+    public boolean verifyProductDetailsPageTitle(){
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("Products Details page is displayed");
-        else
+            flag=true;
+        }
+        else {
             log.info("Products Details page is not displayed");
+            flag=false;
+        }
+        return flag;
     }
-
     public void clickOnAddToCartButton(){
         addToCartButton.click();
-        log.info("Clicked on add To Cart button successfully");
+        log.info("User Clicked on add To Cart button successfully");
     }
     public void clickOnContinueShoppingButton(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

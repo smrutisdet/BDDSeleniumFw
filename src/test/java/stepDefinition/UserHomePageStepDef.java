@@ -23,7 +23,7 @@ public class UserHomePageStepDef extends BaseSteps {
     //private HomePage homePage;
    // private SignUpLoginPage signupLoginPage;
     private UserHomePage userHomepage;
-    private BaseSteps baseSteps;
+   // private BaseSteps baseSteps;
     private Logger log;
     private WebDriver driver= BrowserFactory.getDriverInstance();
     @Then("application should navigate to logged in user home page")

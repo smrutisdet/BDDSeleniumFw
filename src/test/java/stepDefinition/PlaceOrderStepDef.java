@@ -11,8 +11,8 @@ import org.openqa.selenium.WebDriver;
 import pageObjectClasses.*;
 
 public class PlaceOrderStepDef extends BaseSteps {
-    private UserHomePage userHomepage;
-    private BaseSteps baseSteps;
+//    private UserHomePage userHomepage;
+//    private BaseSteps baseSteps;
     private HomePage homePage;
     private ProductsSearchPage productsSearchPage;
     private  ProductDetailsPage productDetailsPage;
@@ -27,40 +27,41 @@ public class PlaceOrderStepDef extends BaseSteps {
     public void userClicksOnProductsButton() {
         log=LogManager.getLogger(this.getClass().getName());
         homePage = new HomePage(driver);
-        homePage.clicksProductsLink();
         log.info("User clicks on Products Link");
+        homePage.clicksProductsLink();
     }
     @And("user enters product search string as {string}")
     public void userEntersProductSearchStringAs(String searchItem) {
         productsSearchPage=new ProductsSearchPage(driver);
-        productsSearchPage.searchForItem(searchItem);
         log.info("User enters the search item");
+        productsSearchPage.searchForItem(searchItem);
     }
     @And("user clicks on search button")
     public void userClicksOnSearchButton() {
-        productsSearchPage.clickOnSearchButton();
         log.info("User clicks on search button");
+        productsSearchPage.clickOnSearchButton();
     }
 
     @Then("user clicks on view products")
     public void userClicksOnViewProducts() {
-        productsSearchPage.clickOnViewProduct();
         log.info("User clicks on view product button from search result");
+        productsSearchPage.clickOnViewProduct();
     }
 
     @And("in product details page user clicks on Add to cart button")
     public void inProductDetailsPageUserClicksOnAddToCartButton() {
         productDetailsPage=new ProductDetailsPage(driver);
-        productDetailsPage.verifyProductDetailsPageTitle();
         log.info("Verify user is in Product Details Page");
-        productDetailsPage.clickOnAddToCartButton();
+        Assert.assertTrue(productDetailsPage.verifyProductDetailsPageTitle());
         log.info("User clicks on Add To Cart Button");
+        productDetailsPage.clickOnAddToCartButton();
+
     }
 
     @And("user clicks on Continue Shopping on the displayed pop up window")
     public void userClicksOnContinueShoppingOnTheDisplayedPopUpWindow() {
-        productDetailsPage.clickOnContinueShoppingButton();
         log.info("User clicks on Continue Shopping Button");
+        productDetailsPage.clickOnContinueShoppingButton();
     }
 
     @Then("user clicks on cart link and navigates to view cart page")
@@ -69,7 +70,7 @@ public class PlaceOrderStepDef extends BaseSteps {
         productDetailsPage.clickOnViewCartLink();
         viewCartPage=new ViewCartPage(driver);
         log.info("user verifies the application is in View Cart page");
-        viewCartPage.verifyViewCartPageTitle();
+        Assert.assertTrue(viewCartPage.verifyViewCartPageTitle());
     }
     @Then("user verifies the {string} added in the cart")
     public void userVerifiesTheAddedInTheCart(String searchedItem) {
@@ -89,13 +90,17 @@ public class PlaceOrderStepDef extends BaseSteps {
     @And("user enter payment details and clicks on Pay and Confirm Order")
     public void userEnterPaymentDetailsAndClicksOnPayAndConfirmOrder() {
         paymentPage=new PaymentPage(driver);
-        paymentPage.verifyPaymentPageTitle();
+        log.info("Verify that user is in payment page");
+        Assert.assertTrue(paymentPage.verifyPaymentPageTitle());
+        log.info("user enters payment details and clicks on Pay and Confirm Order");
         paymentPage.enterPaymentDetails();
         paymentPage.clickOnPayAndConfirmOrder();
     }
     @And("user navigates to order Confirmation page")
     public void userNavigatesToOrderConfirmationPage() {
         orderConfirmationPage=new OrderConfirmationPage(driver);
+        log.info("user navigates to order Confirmation page");
         Assert.assertTrue(orderConfirmationPage.verifyOrderConfirmationPageTitle());
+
     }
 }

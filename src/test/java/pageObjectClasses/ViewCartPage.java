@@ -24,11 +24,16 @@ public class ViewCartPage {
         PageFactory.initElements(driver,this);
         log=LogManager.getLogger(this.getClass().getName());
     }
-    public void verifyViewCartPageTitle(){
-        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle))
+    public boolean verifyViewCartPageTitle(){
+        if(driver.getTitle().equalsIgnoreCase(ExpectedPageTitle)) {
             log.info("View Cart page is displayed");
-        else
-            log.info("View Cart  page is not displayed");
+            flag = true;
+        }
+        else{
+                log.info("View Cart  page is not displayed");
+                flag=false;
+            }
+        return flag;
     }
     public boolean verifyCartItem(String searchedItem){
         if(CartItem.getText().equalsIgnoreCase(searchedItem)) {

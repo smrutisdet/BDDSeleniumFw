@@ -5,11 +5,10 @@ Feature:User Login
     When user clicks on signup or login link
     Then signup or login page should be displayed
 @smoke
-  Scenario Outline:Scenario outline demo
+  Scenario Outline:valid user Login
     And user enters username as "<userName>" and password as "<password>"
     And user clicks on login button
     Then application should navigate to logged in user home page
-    And user clicks on logout link
     @positiveLoginScenario
     Examples:
       | userName                       | password       |

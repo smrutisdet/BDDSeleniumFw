@@ -36,6 +36,6 @@ public class HomePage {
 
     public void clicksProductsLink(){
         productsLink.click();
-        log.info("Use Clicked on Products  Link successfully");
+        log.info("User Clicked on Products  Link successfully");
     }
 }

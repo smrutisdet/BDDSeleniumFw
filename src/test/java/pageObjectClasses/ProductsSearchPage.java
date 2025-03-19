@@ -17,7 +17,7 @@ public class ProductsSearchPage {
     @FindBy(xpath = "//button[@id='submit_search']")
     @CacheLookup
     private WebElement searchButton;
-    @FindBy(xpath = "//a[@href='/product_details/1']")
+    @FindBy(xpath = "//a[normalize-space()='View Product']")
     @CacheLookup
     private WebElement viewProductButton;
     private String ExpectedPageTitle="Automation Exercise - All Products";
@@ -44,5 +44,4 @@ public class ProductsSearchPage {
         viewProductButton.click();
         log.info("Clicked on view Product button successfully");
     }
-
 }

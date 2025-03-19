@@ -19,7 +19,6 @@ public class Hooks {
    @After(order=0)
     public void tearDown(){
         driver.quit();
-       System.out.println("In Tear down method");
    }
 @After(order=1)
     public void takeScreenshot(Scenario scenario){
