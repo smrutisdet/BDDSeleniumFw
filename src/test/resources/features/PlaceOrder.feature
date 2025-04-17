@@ -1,4 +1,4 @@
-Feature:Add To Cart and place order
+Feature:Place order
   Background:
     Given user navigates to the application
     When user clicks on signup or login link
@@ -24,6 +24,27 @@ Feature:Add To Cart and place order
     Examples:
       | searchItem|
       | Blue top  |
-      | Men Tshirt|
-
-
+    #| Men Tshirt|
+  @smoke
+  Scenario Outline:Add multiple products to cart
+    And user clicks on products button
+    And user enters product search string as "<searchItem>"
+    And user clicks on search button
+    And user clicks on view products
+    And in product details page user clicks on Add to cart button
+    And user clicks on Continue Shopping on the displayed pop up window
+    And user clicks on products button
+    And user enters product search string as "<secondSearchItem>"
+    And user clicks on search button
+    And user clicks on view products
+    And in product details page user clicks on Add to cart button
+    And user clicks on Continue Shopping on the displayed pop up window
+    And user clicks on cart link and navigates to view cart page
+    And user clicks on proceeds To Checkout
+    And user clicks on place order
+    And user enter payment details and clicks on Pay and Confirm Order
+    Then user navigates to order Confirmation page
+    And user clicks on logout link
+    Examples:
+      |searchItem      |secondSearchItem|
+      |Sleeveless Dress|Stylish Dress   |

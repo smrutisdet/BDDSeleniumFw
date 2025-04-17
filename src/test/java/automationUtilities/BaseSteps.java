@@ -1,14 +1,17 @@
 package automationUtilities;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * The BaseSteps class provides utility methods for setting up and interacting with web drivers.
+ */
 public class BaseSteps {
     //public static WebDriver driver;
     private Properties prop;
@@ -16,27 +19,17 @@ public class BaseSteps {
     private String browser;
     private Logger log;
 
-
+    /**
+     * Opens the application URL in the specified WebDriver instance.
+     *
+     * @param driver the WebDriver instance to use for opening the URL
+     */
     public void openURL(WebDriver driver) {
         prop = new Properties();
         try {
             log = LogManager.getLogger(this.getClass().getName());
             prop.load(BaseSteps.class.getClassLoader().getResourceAsStream("configuration.properties"));
             applicationURL = prop.getProperty("appURL");
-            /*browser=prop.getProperty("browser");
-            if(browser.equalsIgnoreCase("chrome")){
-                driver=new ChromeDriver();
-            }
-            else if(browser.equalsIgnoreCase("edge")){
-                driver= new EdgeDriver();
-            }
-            else if(browser.equalsIgnoreCase("firefox")){
-                driver= new FirefoxDriver();
-            }
-            else{
-                driver=null;
-                log.info("Invalid browser type");
-            }*/
             driver.get(applicationURL);
             driver.manage().window().maximize();
             log.info("Navigated to application");

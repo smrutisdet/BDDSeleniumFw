@@ -50,6 +50,7 @@ public class SignUpLoginPage {
             flag=true;
         }
 
+
         return flag;
     }
 
